@@ -23,7 +23,7 @@ class Log
         this->checkPath();
     }
 
-    public function log(string level, string message, array context)
+    public function log(string level, string message, array context = [])
     {
         var line, timestamp, datetime;
 
@@ -36,42 +36,42 @@ class Log
         this->process(level, line);
     }
 
-    public function emergency(string message, array context)
+    public function emergency(string message, array context = [])
     {
         this->log(self::EMERGENCY, message, context);
     }
 
-    public function alert(string message, array context)
+    public function alert(string message, array context = [])
     {
         this->log(self::ALERT, message, context);
     }
 
-    public function critical(string message, array context)
+    public function critical(string message, array context = [])
     {
         this->log(self::CRITICAL, message, context);
     }
 
-    public function error(string message, array context)
+    public function error(string message, array context = [])
     {
         this->log(self::ERROR, message, context);
     }
 
-    public function warning(string message, array context)
+    public function warning(string message, array context = [])
     {
         this->log(self::WARNING, message, context);
     }
 
-    public function notice(string message, array context)
+    public function notice(string message, array context = [])
     {
         this->log(self::NOTICE, message, context);
     }
 
-    public function info(string message, array context)
+    public function info(string message, array context = [])
     {
         this->log(self::INFO, message, context);
     }
 
-    public function debug(string message, array context)
+    public function debug(string message, array context = [])
     {
         this->log(self::DEBUG, message, context);
     }

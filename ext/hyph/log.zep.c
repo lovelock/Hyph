@@ -92,11 +92,16 @@ PHP_METHOD(Hyph_Log, log) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 3, 0, &level_param, &message_param, &context_param);
+	zephir_fetch_params(1, 2, 1, &level_param, &message_param, &context_param);
 
 	zephir_get_strval(&level, level_param);
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_CALL_METHOD(&line, this_ptr, "interpolate", NULL, 2, &message, &context);
@@ -129,10 +134,15 @@ PHP_METHOD(Hyph_Log, emergency) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -156,10 +166,15 @@ PHP_METHOD(Hyph_Log, alert) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -183,10 +198,15 @@ PHP_METHOD(Hyph_Log, critical) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -210,10 +230,15 @@ PHP_METHOD(Hyph_Log, error) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -237,10 +262,15 @@ PHP_METHOD(Hyph_Log, warning) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -264,10 +294,15 @@ PHP_METHOD(Hyph_Log, notice) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -291,10 +326,15 @@ PHP_METHOD(Hyph_Log, info) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
@@ -318,10 +358,15 @@ PHP_METHOD(Hyph_Log, debug) {
 	ZVAL_UNDEF(&context);
 
 	ZEPHIR_MM_GROW();
-	zephir_fetch_params(1, 2, 0, &message_param, &context_param);
+	zephir_fetch_params(1, 1, 1, &message_param, &context_param);
 
 	zephir_get_strval(&message, message_param);
-	zephir_get_arrval(&context, context_param);
+	if (!context_param) {
+		ZEPHIR_INIT_VAR(&context);
+		array_init(&context);
+	} else {
+		zephir_get_arrval(&context, context_param);
+	}
 
 
 	ZEPHIR_INIT_VAR(&_0);
