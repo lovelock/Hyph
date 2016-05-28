@@ -68,7 +68,7 @@ PHP_METHOD(Hyph_Log, __construct) {
 
 
 	zephir_update_property_zval(this_ptr, SL("path"), &path);
-	ZEPHIR_CALL_METHOD(NULL, this_ptr, "checkpath", NULL, 1);
+	ZEPHIR_CALL_METHOD(NULL, this_ptr, "checkpath", NULL, 4);
 	zephir_check_call_status();
 	ZEPHIR_MM_RESTORE();
 
@@ -104,18 +104,18 @@ PHP_METHOD(Hyph_Log, log) {
 	}
 
 
-	ZEPHIR_CALL_METHOD(&line, this_ptr, "interpolate", NULL, 2, &message, &context);
+	ZEPHIR_CALL_METHOD(&line, this_ptr, "interpolate", NULL, 5, &message, &context);
 	zephir_check_call_status();
 	ZEPHIR_INIT_VAR(&timestamp);
 	zephir_time(&timestamp);
 	ZEPHIR_INIT_VAR(&_0);
 	ZVAL_STRING(&_0, "Y-m-d\\TH:i:sP");
-	ZEPHIR_CALL_FUNCTION(&datetime, "date", NULL, 3, &_0);
+	ZEPHIR_CALL_FUNCTION(&datetime, "date", NULL, 6, &_0);
 	zephir_check_call_status();
 	ZEPHIR_INIT_VAR(&_1);
 	ZEPHIR_CONCAT_VSVSV(&_1, &timestamp, "\t", &datetime, "\t", &line);
 	ZEPHIR_CPY_WRT(&line, &_1);
-	ZEPHIR_CALL_METHOD(NULL, this_ptr, "process", NULL, 4, &level, &line);
+	ZEPHIR_CALL_METHOD(NULL, this_ptr, "process", NULL, 7, &level, &line);
 	zephir_check_call_status();
 	ZEPHIR_MM_RESTORE();
 
@@ -393,7 +393,7 @@ PHP_METHOD(Hyph_Log, setPath) {
 
 
 	zephir_update_property_zval(this_ptr, SL("path"), &path);
-	ZEPHIR_CALL_METHOD(NULL, this_ptr, "checkpath", NULL, 1);
+	ZEPHIR_CALL_METHOD(NULL, this_ptr, "checkpath", NULL, 4);
 	zephir_check_call_status();
 	ZEPHIR_MM_RESTORE();
 
@@ -433,7 +433,7 @@ PHP_METHOD(Hyph_Log, process) {
 
 	ZEPHIR_INIT_VAR(&_0);
 	ZVAL_STRING(&_0, "YmdH");
-	ZEPHIR_CALL_FUNCTION(&datetime, "date", NULL, 3, &_0);
+	ZEPHIR_CALL_FUNCTION(&datetime, "date", NULL, 6, &_0);
 	zephir_check_call_status();
 	zephir_read_property(&_1, this_ptr, SL("path"), PH_NOISY_CC | PH_READONLY);
 	ZEPHIR_INIT_VAR(&realfile);
@@ -443,7 +443,7 @@ PHP_METHOD(Hyph_Log, process) {
 	ZEPHIR_INIT_VAR(&_2);
 	ZEPHIR_CONCAT_VV(&_2, &message, &_0);
 	ZVAL_LONG(&_3, 3);
-	ZEPHIR_CALL_FUNCTION(NULL, "error_log", NULL, 5, &_2, &_3, &realfile);
+	ZEPHIR_CALL_FUNCTION(NULL, "error_log", NULL, 8, &_2, &_3, &realfile);
 	zephir_check_call_status();
 	ZEPHIR_MM_RESTORE();
 
@@ -475,7 +475,7 @@ PHP_METHOD(Hyph_Log, checkPath) {
 	if (!((zephir_file_exists(&_0 TSRMLS_CC) == SUCCESS))) {
 		zephir_read_property(&_1$$3, this_ptr, SL("path"), PH_NOISY_CC | PH_READONLY);
 		ZVAL_LONG(&_2$$3, 0700);
-		ZEPHIR_CALL_FUNCTION(&mkdirResult, "mkdir", NULL, 6, &_1$$3, &_2$$3, &__$true);
+		ZEPHIR_CALL_FUNCTION(&mkdirResult, "mkdir", NULL, 9, &_1$$3, &_2$$3, &__$true);
 		zephir_check_call_status();
 		if (ZEPHIR_IS_FALSE_IDENTICAL(&mkdirResult)) {
 			ZEPHIR_INIT_VAR(&_3$$4);
@@ -483,7 +483,7 @@ PHP_METHOD(Hyph_Log, checkPath) {
 			zephir_read_property(&_4$$4, this_ptr, SL("path"), PH_NOISY_CC | PH_READONLY);
 			ZEPHIR_INIT_VAR(&_5$$4);
 			ZEPHIR_CONCAT_SVS(&_5$$4, "Can't create directory in ", &_4$$4, ", please check again.");
-			ZEPHIR_CALL_METHOD(NULL, &_3$$4, "__construct", NULL, 7, &_5$$4);
+			ZEPHIR_CALL_METHOD(NULL, &_3$$4, "__construct", NULL, 1, &_5$$4);
 			zephir_check_call_status();
 			zephir_throw_exception_debug(&_3$$4, "hyph/Log.zep", 105 TSRMLS_CC);
 			ZEPHIR_MM_RESTORE();
@@ -491,7 +491,7 @@ PHP_METHOD(Hyph_Log, checkPath) {
 		}
 	} else {
 		zephir_read_property(&_6$$5, this_ptr, SL("path"), PH_NOISY_CC | PH_READONLY);
-		ZEPHIR_CALL_FUNCTION(&_7$$5, "is_dir", NULL, 8, &_6$$5);
+		ZEPHIR_CALL_FUNCTION(&_7$$5, "is_dir", NULL, 10, &_6$$5);
 		zephir_check_call_status();
 		if (!zephir_is_true(&_7$$5)) {
 			ZEPHIR_THROW_EXCEPTION_DEBUG_STR(spl_ce_InvalidArgumentException, "A valid path must be passed to store log files.", "hyph/Log.zep", 109);
@@ -556,7 +556,7 @@ PHP_METHOD(Hyph_Log, interpolate) {
 	} ZEND_HASH_FOREACH_END();
 	ZEPHIR_INIT_NVAR(&value);
 	ZEPHIR_INIT_NVAR(&key);
-	ZEPHIR_RETURN_CALL_FUNCTION("strtr", NULL, 9, &message, &replacement);
+	ZEPHIR_RETURN_CALL_FUNCTION("strtr", NULL, 11, &message, &replacement);
 	zephir_check_call_status();
 	RETURN_MM();
 

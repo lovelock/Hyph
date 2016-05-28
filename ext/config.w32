@@ -11,7 +11,9 @@ if (PHP_HYPH != "no") {
     AC_DEFINE("ZEPHIR_USE_PHP_JSON", 1, "Whether PHP json extension is present at compile time");
   }
   
-  ADD_SOURCES(configure_module_dirname + "/hyph", "log.zep.c", "hyph");
-	ADD_SOURCES(configure_module_dirname + "/hyph/exception", "permissiondeniedexception.zep.c", "hyph");
+  ADD_SOURCES(configure_module_dirname + "/hyph/exception", "containerexception.zep.c permissiondeniedexception.zep.c servicenotfoundexception.zep.c", "hyph");
+	ADD_SOURCES(configure_module_dirname + "/hyph/container", "container.zep.c", "hyph");
+	ADD_SOURCES(configure_module_dirname + "/hyph/interface", "serviceinterface.zep.c", "hyph");
+	ADD_SOURCES(configure_module_dirname + "/hyph", "log.zep.c", "hyph");
   ADD_FLAG("CFLAGS_HYPH", "/D ZEPHIR_RELEASE");
 }

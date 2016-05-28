@@ -23,7 +23,11 @@
 
 
 
+zend_class_entry *hyph_interface_serviceinterface_ce;
+zend_class_entry *hyph_exception_containerexception_ce;
+zend_class_entry *hyph_container_container_ce;
 zend_class_entry *hyph_exception_permissiondeniedexception_ce;
+zend_class_entry *hyph_exception_servicenotfoundexception_ce;
 zend_class_entry *hyph_log_ce;
 
 ZEND_DECLARE_MODULE_GLOBALS(hyph)
@@ -35,7 +39,11 @@ PHP_INI_END()
 static PHP_MINIT_FUNCTION(hyph)
 {
 	REGISTER_INI_ENTRIES();
+	ZEPHIR_INIT(Hyph_Interface_ServiceInterface);
+	ZEPHIR_INIT(Hyph_Exception_ContainerException);
+	ZEPHIR_INIT(Hyph_Container_Container);
 	ZEPHIR_INIT(Hyph_Exception_PermissionDeniedException);
+	ZEPHIR_INIT(Hyph_Exception_ServiceNotFoundException);
 	ZEPHIR_INIT(Hyph_Log);
 	return SUCCESS;
 }

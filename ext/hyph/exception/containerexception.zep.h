@@ -1,0 +1,5 @@
+
+extern zend_class_entry *hyph_exception_containerexception_ce;
+
+ZEPHIR_INIT_CLASS(Hyph_Exception_ContainerException);
+
