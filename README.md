@@ -1,5 +1,17 @@
 # A high performance framework for PHP.
 
+## Tasks
+
+- [] Log
+- [] ServiceContainer
+- [] ConfigContainer
+- [] Router
+- [] HttpRequest
+- [] HttpResponse
+- [] HttpClient
+- [] ORM
+- [] Template Engine
+
 ## Why I make it?
 
 I am a PHP programmer, and I don't know much about C programming, though I tried to learn more.  
@@ -35,7 +47,36 @@ echo $logger->getPath();
 
 Maybe you're concerned if your directory does not exist, don't worry, the logger will create it silently.
 
+Heard of Service Container? Yes, Hyph has it. First you have to give it a configuration, which provides some necessary parameters for it to create service instances for you. Take the logger for example once again.
+
+```php
+$config = [
+    'logger' => [
+        'class' => Hyph\Log::class,
+        'arguments' => [
+            __DIR__,
+        ],
+    ],
+];
+
+$c = new Hyph\Container\Container($config);
+$c->get('logger')->debug('this is sort of {event}', [
+  'event' => 'wiered',
+]);
+
+// Or if you don't like the 'get' thing, then you can use it as a property.
+$c->logger->debug('this is sort of {event}', [
+  'event' => 'wiered',
+]);
+
+// You can even check if the two instances are the same one.
+
+echo spl_object_hash($c->logger);
+echo "\n";
+echo spl_object_hash($c->get('logger'));
+echo "\n";
+```
+
 ## What to do next?
 
 I target this project as a powerful competitor of modern PHP frameworks, so I will create more components later, like router, dependency injection container, configuration container and more. You can choose to contribute code to the project or be a tester of it, or raise more functionality issues to help me make it better.
-
