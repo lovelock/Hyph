@@ -308,7 +308,7 @@ configure:5063: output
 0000000000000001 C __gnu_lto_v1
 configure:5070: result: BSD nm
 configure:5073: checking whether ln -s works
-configure:5077: result: yes
+configure:5080: result: no, using cp -pR
 configure:5085: checking the maximum length of command line arguments
 configure:5216: result: 1572864
 configure:5264: checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format
@@ -607,7 +607,7 @@ LIBOBJS=''
 LIBS=''
 LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO=''
-LN_S='ln -s'
+LN_S='cp -pR'
 LTLIBOBJS=''
 LT_SYS_LIBRARY_PATH=''
 MANIFEST_TOOL=':'

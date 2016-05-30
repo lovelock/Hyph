@@ -1,61 +1,61 @@
-hyph.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph.c -o hyph.lo 
-kernel/main.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/main.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/main.c -o kernel/main.lo 
-kernel/memory.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/memory.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/memory.c -o kernel/memory.lo 
-kernel/exception.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/exception.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/exception.c -o kernel/exception.lo 
-kernel/hash.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/hash.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/hash.c -o kernel/hash.lo 
-kernel/debug.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/debug.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/debug.c -o kernel/debug.lo 
-kernel/backtrace.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/backtrace.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/backtrace.c -o kernel/backtrace.lo 
-kernel/object.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/object.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/object.c -o kernel/object.lo 
-kernel/array.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/array.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/array.c -o kernel/array.lo 
-kernel/extended/array.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/extended/array.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/extended/array.c -o kernel/extended/array.lo 
-kernel/string.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/string.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/string.c -o kernel/string.lo 
-kernel/fcall.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/fcall.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/fcall.c -o kernel/fcall.lo 
-kernel/extended/fcall.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/extended/fcall.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/extended/fcall.c -o kernel/extended/fcall.lo 
-kernel/require.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/require.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/require.c -o kernel/require.lo 
-kernel/file.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/file.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/file.c -o kernel/file.lo 
-kernel/operators.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/operators.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/operators.c -o kernel/operators.lo 
-kernel/math.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/math.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/math.c -o kernel/math.lo 
-kernel/concat.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/concat.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/concat.c -o kernel/concat.lo 
-kernel/variables.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/variables.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/variables.c -o kernel/variables.lo 
-kernel/filter.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/filter.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/filter.c -o kernel/filter.lo 
-kernel/iterator.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/iterator.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/iterator.c -o kernel/iterator.lo 
-kernel/time.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/time.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/time.c -o kernel/time.lo 
-kernel/exit.lo: /home/frost/projects/zephir/projects/hyph/ext/kernel/exit.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/kernel/exit.c -o kernel/exit.lo 
-hyph/exception/containerexception.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/containerexception.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/containerexception.zep.c -o hyph/exception/containerexception.lo 
-hyph/container/container.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/container/container.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/container/container.zep.c -o hyph/container/container.lo 
-hyph/exception/permissiondeniedexception.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/permissiondeniedexception.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/permissiondeniedexception.zep.c -o hyph/exception/permissiondeniedexception.lo 
-hyph/exception/servicenotfoundexception.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/servicenotfoundexception.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/exception/servicenotfoundexception.zep.c -o hyph/exception/servicenotfoundexception.lo 
-hyph/interface/serviceinterface.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/interface/serviceinterface.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/interface/serviceinterface.zep.c -o hyph/interface/serviceinterface.lo 
-hyph/log.lo: /home/frost/projects/zephir/projects/hyph/ext/hyph/log.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/projects/zephir/projects/hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/projects/zephir/projects/hyph/ext/hyph/log.zep.c -o hyph/log.lo 
+hyph.lo: /home/frost/workspace/Hyph/ext/hyph.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph.c -o hyph.lo 
+kernel/main.lo: /home/frost/workspace/Hyph/ext/kernel/main.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/main.c -o kernel/main.lo 
+kernel/memory.lo: /home/frost/workspace/Hyph/ext/kernel/memory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/memory.c -o kernel/memory.lo 
+kernel/exception.lo: /home/frost/workspace/Hyph/ext/kernel/exception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/exception.c -o kernel/exception.lo 
+kernel/hash.lo: /home/frost/workspace/Hyph/ext/kernel/hash.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/hash.c -o kernel/hash.lo 
+kernel/debug.lo: /home/frost/workspace/Hyph/ext/kernel/debug.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/debug.c -o kernel/debug.lo 
+kernel/backtrace.lo: /home/frost/workspace/Hyph/ext/kernel/backtrace.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/backtrace.c -o kernel/backtrace.lo 
+kernel/object.lo: /home/frost/workspace/Hyph/ext/kernel/object.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/object.c -o kernel/object.lo 
+kernel/array.lo: /home/frost/workspace/Hyph/ext/kernel/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/array.c -o kernel/array.lo 
+kernel/extended/array.lo: /home/frost/workspace/Hyph/ext/kernel/extended/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/extended/array.c -o kernel/extended/array.lo 
+kernel/string.lo: /home/frost/workspace/Hyph/ext/kernel/string.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/string.c -o kernel/string.lo 
+kernel/fcall.lo: /home/frost/workspace/Hyph/ext/kernel/fcall.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/fcall.c -o kernel/fcall.lo 
+kernel/extended/fcall.lo: /home/frost/workspace/Hyph/ext/kernel/extended/fcall.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/extended/fcall.c -o kernel/extended/fcall.lo 
+kernel/require.lo: /home/frost/workspace/Hyph/ext/kernel/require.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/require.c -o kernel/require.lo 
+kernel/file.lo: /home/frost/workspace/Hyph/ext/kernel/file.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/file.c -o kernel/file.lo 
+kernel/operators.lo: /home/frost/workspace/Hyph/ext/kernel/operators.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/operators.c -o kernel/operators.lo 
+kernel/math.lo: /home/frost/workspace/Hyph/ext/kernel/math.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/math.c -o kernel/math.lo 
+kernel/concat.lo: /home/frost/workspace/Hyph/ext/kernel/concat.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/concat.c -o kernel/concat.lo 
+kernel/variables.lo: /home/frost/workspace/Hyph/ext/kernel/variables.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/variables.c -o kernel/variables.lo 
+kernel/filter.lo: /home/frost/workspace/Hyph/ext/kernel/filter.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/filter.c -o kernel/filter.lo 
+kernel/iterator.lo: /home/frost/workspace/Hyph/ext/kernel/iterator.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/iterator.c -o kernel/iterator.lo 
+kernel/time.lo: /home/frost/workspace/Hyph/ext/kernel/time.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/time.c -o kernel/time.lo 
+kernel/exit.lo: /home/frost/workspace/Hyph/ext/kernel/exit.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/exit.c -o kernel/exit.lo 
+hyph/exception/containerexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/containerexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/exception/containerexception.zep.c -o hyph/exception/containerexception.lo 
+hyph/container/container.lo: /home/frost/workspace/Hyph/ext/hyph/container/container.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/container/container.zep.c -o hyph/container/container.lo 
+hyph/exception/permissiondeniedexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/permissiondeniedexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/exception/permissiondeniedexception.zep.c -o hyph/exception/permissiondeniedexception.lo 
+hyph/exception/servicenotfoundexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/servicenotfoundexception.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/exception/servicenotfoundexception.zep.c -o hyph/exception/servicenotfoundexception.lo 
+hyph/interface/serviceinterface.lo: /home/frost/workspace/Hyph/ext/hyph/interface/serviceinterface.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/interface/serviceinterface.zep.c -o hyph/interface/serviceinterface.lo 
+hyph/log.lo: /home/frost/workspace/Hyph/ext/hyph/log.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/log.zep.c -o hyph/log.lo 
 $(phplibdir)/hyph.la: ./hyph.la
 	$(LIBTOOL) --mode=install cp ./hyph.la $(phplibdir)
 

@@ -94,7 +94,7 @@ FGREP="/bin/grep -F"
 NM="/usr/bin/nm -B"
 
 # Whether we need soft or hard links.
-LN_S="ln -s"
+LN_S="cp -pR"
 
 # What is the maximum length of a command?
 max_cmd_len=1572864
