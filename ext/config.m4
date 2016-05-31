@@ -10,7 +10,7 @@ if test "$PHP_HYPH" = "yes"; then
 
 	AC_DEFINE(HAVE_HYPH, 1, [Whether you have Hyph])
 	hyph_sources="hyph.c kernel/main.c kernel/memory.c kernel/exception.c kernel/hash.c kernel/debug.c kernel/backtrace.c kernel/object.c kernel/array.c kernel/extended/array.c kernel/string.c kernel/fcall.c kernel/extended/fcall.c kernel/require.c kernel/file.c kernel/operators.c kernel/math.c kernel/concat.c kernel/variables.c kernel/filter.c kernel/iterator.c kernel/time.c kernel/exit.c hyph/exception/containerexception.zep.c
-	hyph/container/container.zep.c
+	hyph/container.zep.c
 	hyph/exception/permissiondeniedexception.zep.c
 	hyph/exception/servicenotfoundexception.zep.c
 	hyph/interface/serviceinterface.zep.c

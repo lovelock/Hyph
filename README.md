@@ -59,7 +59,7 @@ $config = [
     ],
 ];
 
-$c = new Hyph\Container\Container($config);
+$c = new Hyph\Container($config);
 $c->get('logger')->debug('this is sort of {event}', [
   'event' => 'wiered',
 ]);

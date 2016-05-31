@@ -8,17 +8,17 @@ $config = [
         ],
     ],
 ];
-$c = new Hyph\Container\Container($config);
+$c = new Hyph\Container($config);
 
 echo $c->has('logger');
 echo "\n";
 
 $c->get('logger')->debug('I am a debug info named {name}.', [
-    'name' => 'wangqingchun',
+        'name' => 'wangqingchun',
 ]);
 
 $c->logger->warning('I am a warning info named {name}.', [
-    'name' => 'wangqingchun',
+        'name' => 'wangqingchun',
 ]);
 
 

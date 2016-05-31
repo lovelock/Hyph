@@ -12,8 +12,7 @@ if (PHP_HYPH != "no") {
   }
   
   ADD_SOURCES(configure_module_dirname + "/hyph/exception", "containerexception.zep.c permissiondeniedexception.zep.c servicenotfoundexception.zep.c", "hyph");
-	ADD_SOURCES(configure_module_dirname + "/hyph/container", "container.zep.c", "hyph");
+	ADD_SOURCES(configure_module_dirname + "/hyph", "container.zep.c log.zep.c", "hyph");
 	ADD_SOURCES(configure_module_dirname + "/hyph/interface", "serviceinterface.zep.c", "hyph");
-	ADD_SOURCES(configure_module_dirname + "/hyph", "log.zep.c", "hyph");
   ADD_FLAG("CFLAGS_HYPH", "/D ZEPHIR_RELEASE");
 }

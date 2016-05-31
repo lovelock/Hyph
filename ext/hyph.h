@@ -5,7 +5,7 @@
 #define ZEPHIR_CLASS_ENTRIES_H
 
 #include "hyph/exception/containerexception.zep.h"
-#include "hyph/container/container.zep.h"
+#include "hyph/container.zep.h"
 #include "hyph/exception/permissiondeniedexception.zep.h"
 #include "hyph/exception/servicenotfoundexception.zep.h"
 #include "hyph/interface/serviceinterface.zep.h"

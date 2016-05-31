@@ -11,7 +11,7 @@ SHLIB_DL_SUFFIX_NAME = so
 ZEND_EXT_TYPE = zend_extension
 RE2C = re2c
 AWK = nawk
-shared_objects_hyph = hyph.lo kernel/main.lo kernel/memory.lo kernel/exception.lo kernel/hash.lo kernel/debug.lo kernel/backtrace.lo kernel/object.lo kernel/array.lo kernel/extended/array.lo kernel/string.lo kernel/fcall.lo kernel/extended/fcall.lo kernel/require.lo kernel/file.lo kernel/operators.lo kernel/math.lo kernel/concat.lo kernel/variables.lo kernel/filter.lo kernel/iterator.lo kernel/time.lo kernel/exit.lo hyph/exception/containerexception.lo hyph/container/container.lo hyph/exception/permissiondeniedexception.lo hyph/exception/servicenotfoundexception.lo hyph/interface/serviceinterface.lo hyph/log.lo
+shared_objects_hyph = hyph.lo kernel/main.lo kernel/memory.lo kernel/exception.lo kernel/hash.lo kernel/debug.lo kernel/backtrace.lo kernel/object.lo kernel/array.lo kernel/extended/array.lo kernel/string.lo kernel/fcall.lo kernel/extended/fcall.lo kernel/require.lo kernel/file.lo kernel/operators.lo kernel/math.lo kernel/concat.lo kernel/variables.lo kernel/filter.lo kernel/iterator.lo kernel/time.lo kernel/exit.lo hyph/exception/containerexception.lo hyph/container.lo hyph/exception/permissiondeniedexception.lo hyph/exception/servicenotfoundexception.lo hyph/interface/serviceinterface.lo hyph/log.lo
 PHP_PECL_EXTENSION = hyph
 HYPH_SHARED_LIBADD =
 PHP_MODULES = $(phplibdir)/hyph.la
@@ -238,8 +238,8 @@ kernel/exit.lo: /home/frost/workspace/Hyph/ext/kernel/exit.c
 	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/kernel/exit.c -o kernel/exit.lo 
 hyph/exception/containerexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/containerexception.zep.c
 	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/exception/containerexception.zep.c -o hyph/exception/containerexception.lo 
-hyph/container/container.lo: /home/frost/workspace/Hyph/ext/hyph/container/container.zep.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/container/container.zep.c -o hyph/container/container.lo 
+hyph/container.lo: /home/frost/workspace/Hyph/ext/hyph/container.zep.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/container.zep.c -o hyph/container.lo 
 hyph/exception/permissiondeniedexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/permissiondeniedexception.zep.c
 	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/frost/workspace/Hyph/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/frost/workspace/Hyph/ext/hyph/exception/permissiondeniedexception.zep.c -o hyph/exception/permissiondeniedexception.lo 
 hyph/exception/servicenotfoundexception.lo: /home/frost/workspace/Hyph/ext/hyph/exception/servicenotfoundexception.zep.c

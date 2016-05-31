@@ -1,4 +1,4 @@
-namespace Hyph\Container;
+namespace Hyph;
 
 use Hyph\Exception\ContainerException;
 use Hyph\Exception\ServiceNotFoundException;
